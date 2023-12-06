@@ -29,9 +29,9 @@ def execute_query(query):
 @app.route("/add", methods=['POST'])  # Add Student
 def add():
     name = request.json.get('name')
-    email = request.json.get('email')
+    bakht = request.json.get('bakht')
     try:
-        query = '''INSERT INTO students(studentName, email) VALUES('{}', '{}');'''.format(name, email)
+        query = '''INSERT INTO students(studentName, bakht) VALUES('{}', '{}');'''.format(name, email)
         success = execute_query(query)
 
         if success:
