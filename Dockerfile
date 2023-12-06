@@ -12,7 +12,7 @@ RUN pip install --trusted-host pypi.python.org -r requirements.txt
 COPY . /app
 
 # Set environment variables
-ENV MYSQL_USER bakht
+ENV MYSQL_USER root
 ENV MYSQL_PASSWORD secret
 ENV MYSQL_DB student
 ENV MYSQL_HOST 35.246.77.90
